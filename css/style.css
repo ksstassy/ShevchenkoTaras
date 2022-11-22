@@ -1,0 +1,817 @@
+/* *********************** */
+/* Header */
+/* *********************** */
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+a:hover {
+  color: rgb(0, 0, 0);
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted;
+  outline-offset: 8px; */
+  /* box-shadow: 0 0 0 0.8rem rgba(124, 96, 72, 0.5); */
+}
+
+#header-nav {
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100%;
+  /* margin: 20px; */
+  background: rgb(255, 255, 255);
+  -webkit-transition: -webkit-transform 0.7s 0.3s ease;
+  -moz-transition: -moz-transform 0.7s 0.3s ease;
+  -ms-transition: -ms-transform 0.7s 0.3s ease;
+  transition: transform 0.7s 0.3s ease;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+#header-nav.hide-nav-bar {
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+  -webkit-backface-visibility: hidden;
+}
+a.menu-link {
+  float: right;
+  display: block;
+  padding: 1em;
+}
+nav[role="navigation"] {
+  clear: right;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.js nav[role="navigation"] {
+  overflow: hidden;
+  max-height: 0;
+}
+nav[role="navigation"].active {
+  max-height: 55em;
+}
+nav[role="navigation"] ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+  padding: 0.7em 0;
+}
+nav[role="navigation"] li a {
+  display: block;
+  padding: 0.8em;
+  font-size: 1.9em;
+
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+.menu-link {
+  height: 50px;
+  width: 53px;
+  cursor: pointer;
+}
+.bar1,
+.bar2,
+.bar3,
+.bar4,
+.bar5 {
+  margin-top: 3px;
+  background: #999;
+  width: 33px;
+  height: 4px;
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+.bar2 {
+  margin-top: 13px;
+}
+.bar3 {
+  margin-top: 23px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.bar4 {
+  margin-top: 23px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.brand {
+  float: left;
+  /* margin-left: 1em; */
+  padding: 2em;
+  align-items: center;
+  text-align: center;
+}
+.brand h1 {
+  margin: 0;
+  /* font-size: 3.5em;
+  font-size: 300; */
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+
+  /* margin-top: 1.5rem; */
+  text-align: center;
+  color: #000000;
+
+  font-weight: 400;
+  font-size: 2.8rem;
+  /* line-height: 0.8px; */
+  margin-left: 0;
+}
+
+.brandfoote {
+  /* float: left; */
+  /* margin-left: 1em; */
+  padding: 2em;
+  /* align-items: center;
+  text-align: center; */
+}
+.brandfooter h1 {
+  margin: 0;
+  font-size: 3.5em;
+  font-size: 300;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #000000;
+
+  font-weight: 400;
+  font-size: 2.8rem;
+  /* line-height: 0.8px; */
+  margin-left: 0;
+}
+
+.container {
+  /* max-width: 72em; */
+  margin: 0 auto;
+}
+section {
+  margin-top: 1em;
+  padding: 1em;
+  color: #5c5c5c;
+}
+section hr {
+  border-bottom: none;
+  color: #f2f2f2;
+}
+
+/* *********************** */
+/* Hero  section */
+/* ******************* */
+.section-hero {
+  background-color: #fcfcfc;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+/* .hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+} */
+
+.heading-primary {
+  font-weight: 400;
+  font-size: 3rem;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-align: auto;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-img1 {
+  width: 30%;
+  float: right;
+}
+
+/* ************************************************************** */
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/* Override UGG site */
+#main {
+  width: 100%;
+  padding: 0;
+}
+.content-asset p {
+  margin: 0 auto;
+}
+.breadcrumb {
+  display: none;
+}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {
+  padding-top: 10px;
+}
+.margin-bot-10 {
+  padding-bottom: 10px;
+}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #553822;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+.h11 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.2rem;
+}
+
+.ht1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+#parallax-world-of-ugg h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  letter-spacing: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 0.9;
+}
+#parallax-world-of-ugg h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 0;
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: black;
+}
+#parallax-world-of-ugg p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.first-character {
+  font-weight: 400;
+  float: left;
+  font-size: 84px;
+  line-height: 64px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.first-character1 {
+  font-weight: 400;
+  float: left;
+  font-size: 84px;
+  line-height: 64px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.sc1 {
+  color: #483a34;
+}
+.ny {
+  color: #3d3c3a;
+}
+.atw {
+  color: #c48660;
+}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {
+  background: white;
+  padding: 60px;
+  margin: 0 auto;
+  text-align: center;
+}
+#parallax-world-of-ugg .title h1 {
+  font-size: 35px;
+  letter-spacing: 8px;
+}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {
+  background: white;
+  padding: 15px;
+  width: 820px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.block1 {
+  position: relative;
+  align-items: center;
+}
+
+#parallax-world-of-ugg .block-gray {
+  background: #f2f2f2;
+  padding: 60px;
+}
+#parallax-world-of-ugg .section-overlay-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0a/%D0%87%D0%B6%D0%B0%D0%BA%D0%B5%D0%B2%D0%B8%D1%87._%D0%9C%D0%B5%D0%BD%D1%96_%D1%82%D1%80%D0%B8%D0%BD%D0%B0%D0%B4%D1%86%D1%8F%D1%82%D0%B8%D0%B9_%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%D0%BE.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.family {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top: 10px;
+}
+
+.hata {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top: 10px;
+}
+
+.katerina {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top: 10px;
+}
+
+.kobzar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top: 10px;
+}
+
+.mem {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top: 10px;
+}
+
+.text2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.diti {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top: 10px;
+}
+
+.fire {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top: 10px;
+}
+
+.taras {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top: 10px;
+}
+
+.taras1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  margin-top: 10px;
+}
+
+#parallax-world-of-ugg .parallax-two {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(https://print4you.com.ua/upload/iblock/ba1/ba1125057801aa41c0c3af00b855c8f1.JPG);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#parallax-world-of-ugg .parallax-three {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(https://znaj.ua/images/2018/12/18/hBmWg3dbeNh9dTLSnSYC7U1tD5QL7zkshz67nxmL.jpeg);
+
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {
+  border-bottom: 2px solid #553822;
+  width: 170px;
+  margin: 0 auto;
+}
+
+/* ************************************************************** */
+
+/* ************************************** */
+/* BOOK */
+/* ************************************* */
+
+.virtual h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.book {
+  transition: opacity 0.4s 0.2s;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  line-height: 1.5em;
+}
+.book p {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #000000;
+  /* font-size: 300; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 0.8px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.data {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.page {
+  width: 30vw;
+  height: 44vw;
+  background-color: #ffffff;
+  float: left;
+  margin-bottom: 0.5em;
+  background: left top no-repeat;
+  background-size: cover;
+}
+.page:nth-child(even) {
+  clear: both;
+}
+.book {
+  perspective: 200vw;
+}
+
+.img112 {
+  width: 30vw;
+  height: 44vw;
+}
+
+.book .pages {
+  width: 60vw;
+  height: 44vw;
+  position: relative;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 4px;
+  /*box-shadow: 0 0 0 1px #e3dfd8;*/
+}
+.book .page {
+  float: none;
+  clear: none;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 30vw;
+  height: 44vw;
+  transform-origin: 0 0;
+  transition: transform 1.4s;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  user-select: none;
+  background-color: #f6ebd5;
+}
+.book .page:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.7s;
+  z-index: 2;
+}
+.book .page:nth-child(odd) {
+  pointer-events: all;
+  transform: rotateY(0deg);
+  right: 0;
+  border-radius: 0 4px 4px 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0) 10%
+  );
+}
+.book .page:nth-child(odd):hover {
+  transform: rotateY(-15deg);
+}
+.book .page:nth-child(odd):hover:before {
+  background: rgba(0, 0, 0, 0.03);
+}
+.book .page:nth-child(odd):before {
+  background: rgba(0, 0, 0, 0);
+}
+.book .page:nth-child(even) {
+  pointer-events: none;
+  transform: rotateY(180deg);
+  transform-origin: 100% 0;
+  left: 0;
+  border-radius: 4px 0 0 4px;
+  border-color: black;
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.12) 0%,
+    rgba(0, 0, 0, 0) 10%
+  );
+}
+.book .page:nth-child(even):before {
+  background: rgba(0, 0, 0, 0.2);
+}
+.book .page.grabbing {
+  transition: none;
+}
+.book .page.flipped:nth-child(odd) {
+  pointer-events: none;
+  transform: rotateY(-180deg);
+}
+.book .page.flipped:nth-child(odd):before {
+  background: rgba(0, 0, 0, 0.2);
+}
+.book .page.flipped:nth-child(even) {
+  pointer-events: all;
+  transform: rotateY(0deg);
+}
+.book .page.flipped:nth-child(even):hover {
+  transform: rotateY(15deg);
+}
+.book .page.flipped:nth-child(even):hover:before {
+  background: rgba(0, 0, 0, 0.03);
+}
+.book .page.flipped:nth-child(even):before {
+  background: rgba(0, 0, 0, 0);
+}
+*,
+* :before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+/* body {
+  font-family: "Roboto Flex", cursive;
+  background: rgb(255, 255, 255);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+} */
+/* html {
+  height: 100%;
+} */
+/* body {
+  min-height: 100%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  line-height: 1.5em;
+} */
+.page:nth-child(odd) {
+  background-position: right top;
+}
+
+/* **************************************** */
+/* **************************************** */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+} */
+
+.container {
+  /* width: 100%;
+  min-height: 100vh; */
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  padding: 15px 8%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+  grid-gap: 30px;
+  align-items: center;
+}
+
+.gallery img {
+  width: 100%;
+  /* width: 300px; */
+  height: 300px;
+  object-fit: cover;
+}
+
+/* *************************************** */
+/* ************************************** */
+/* *********************** */
+/*footer section */
+/* ******************* */
+
+.footer {
+  padding: 2.8rem 0;
+  border-top: 1px solid #eee;
+  width: 100%;
+}
+
+.grid-footer {
+  grid-template-columns: 1.5fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.gallery p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
