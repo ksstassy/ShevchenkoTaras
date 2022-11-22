@@ -33,7 +33,7 @@
     ></script>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script> -->
 
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.js"
@@ -45,7 +45,7 @@
       <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
       <script src="https://rawgit.com/Ctrl-Alt-Zen/aframe-mobile-controls/master/components/tilt-turn/tilt-turn.js"></script>
 
-    <!-- ***************** -->
+  
     <title>Shevchenko</title>
   </head>
   <body>
@@ -183,14 +183,6 @@
           <img src="img\paint\3.jpg" />
           <p>Голова жінки. Акварель. 1834.</p>
         </a>
-
-        <!-- <a
-          href="img\paint\8.jpg"
-          data-lightbox="models"
-          data-title="Caption1"
-        >
-          <img src="img\paint\8.jpg" />
-        </a> -->
 
         <a
           href="img\paint\4.jpg"
@@ -2251,150 +2243,6 @@ data-title="Автопортрет у шапці та кожусі. 1860. Пап
 </a>
 </div>
 </div>
-
-<section> 
-  <a-scene background="color: #333333" shadow="autoUpdate: false">
-  <a-camera tilt-turn="criticalAngle: 20" twoway-motion="speed:32" camera="" position="-0.4508496180815301 1.6 -0.47321396136130495" rotation="-2.8647889756541156 -174.75212751490113 0" look-controls="" wasd-controls="" data-aframe-inspector-original-camera="">...</a-camera>
-    
-    <a-text position="-1.1556 2.24 -2.7" rotation="0 0 0" width="4.6" height="4.6" color="#d6d6d6" value="Welcome to the VR Gallery!"></a-text>
-    <a-text position="-1.74 1.96 -2.7" rotation="0 0 0" width="6" height="6" color="#eee" value="R e a l i s t i c    S u r r e a l i s m"></a-text>
-    <a-text position="-0.56 1.72 -2.7" rotation="0 0 0" width="3.6" height="3.6" color="#999" value="by @displaymind"></a-text>
-    <a-text position="-0.5 1.5 -2.9" rotation="0 0 0" width="2" height="2" color="#999" value="Use w, a, s, d to move around."></a-text>
-    <a-text position="-0.54072 1.4 -2.9" rotation="" width="2" height="2" color="#999" value="Use your mouse to look around." text=""></a-text>
-    <a-text position="-0.77 1.2 -2.9" rotation="0 0 0" width="2" height="2" color="#999" value="On mobile: move your phone around to look around. Tap on your screen to move forward."></a-text>
-    <a-text position="-0.7 1 -2.9" rotation="0 0 0" width="2" height="2" color="#999" value="Tap and look down to move backwards."></a-text>
-
-
-    
-    <!--<a-entity light="color: #fff; intensity: 1.5" position="0 1.2 0"></a-entity>-->
-    <!--<a-entity light="type: ambient; color: #FFF"></a-entity>-->
-    <!--<a-entity light="type: hemisphere; color: #33C; groundColor: #3C3; intensity: 2"></a-entity>-->
-    
-    
-    <!--LIGHT_1-->
-    <!--<a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="1 2.9 -1.2"></a-entity>
-    <a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="1 2.9 0"></a-entity>
-    <a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="1 2.9 1.2"></a-entity>
-    <!--LIGHT_2-->
-    <!--<a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="-1 2.9 -1.2"></a-entity>
-    <a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="-1 2.9 0"></a-entity>
-    <a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="-1 2.9 1.2"></a-entity>
-    
-    
-<!--Bodenuebergang-->
-   <a-cursor><a-plane position="0 1 2.5" rotation="-90 0 0" width="4" height="0.98" color="#cccccc" shadow="cast: false"></a-plane></a-cursor>
-
-<!--Bodenuebergang-->
-    <a-plane position="0 1 7.5" rotation="-90 0 0" width="4" height="0.98" color="#cccccc" shadow="cast: false"></a-plane>  
-    
-<!--Bodenuebergang-->
-    <a-plane position="0 1 12.5" rotation="-90 0 0" width="4" height="1" color="#cccccc" shadow="cast: false"></a-plane>
-    
-    
-    
-    <!--Boden-->
-    <a-plane position="0 1 0" rotation="-90 0 0" width="4" height="4" color="#cccccc" shadow="cast: false"></a-plane>
-    <!--Gemälde1-->
-    
-    <a-plane position="1.99 1.8 -1.2" rotation="0 -90 0" width="0.8" height="1" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FHOLY_MOTHERcp.jpg?1548946717969" shadow="cast: false"></a-plane>
-    <!--Gemälde2-->
-    <a-plane id="hay" position="1.99 1.8 0" rotation="0 -90 0" width="0.8" height="1" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FMOTHER_NATUREcp.jpg?1548946661547" shadow="cast: false"></a-plane>
-    <!--Gemälde3-->
-    <a-plane position="1.99 1.8 1.2" rotation="0 -90 0" width="0.8" height="1" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FDISPLAY_CULTUREcp.jpg?1548947696843" shadow="cast: false"></a-plane>
-    <!--Gemälde4-->
-    <a-plane position="-1.99 1.8 -1.2" rotation="0 90 0" width="0.8" height="1" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FDRUG_NATUREcp.jpg?1548947643232" shadow="cast: false"></a-plane>
-    <!--Gemälde5-->
-    <a-plane position="-1.99 1.8 0" rotation="0 90 0" width="0.8" height="1" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FSPYPHONEcp.jpg?1548946603148" shadow="cast: false"></a-plane>
-    <!--Gemälde6-->
-    <a-plane position="-1.99 1.8 1.2" rotation="0 90 0" width="0.8" height="1" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FCONCIOUSNESScp.jpg?1548947654015" shadow="cast: false"></a-plane>
-    <!--Wand1-->
-    <a-plane position="-2 2 0" rotation="0 90 0" width="4" height="2" color="#cccccc" shadow="cast: false"></a-plane>
-    <!--Wand2-->
-    <a-plane position="2 2 0" rotation="0 270 0" width="4" height="2" color="#cccccc" shadow="cast: false"></a-plane>
-    <!--Decke-->
-    <a-plane position="0 3 0" rotation="90 90 0" width="4" height="4" color="#cccccc" shadow="cast: false"></a-plane>
-    
-    
-    <!--LIGHT_1-->
-    <!--<a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="1 2.9 3.8"></a-entity>
-    <a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="1 2.9 5"></a-entity>
-    <a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="1 2.9 6.2"></a-entity>
-    
-    <!--LIGHT_2-->
-    <!--<a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="-1 2.9 3.8"></a-entity>
-    <a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="-1 2.9 5"></a-entity>
-    <a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="-1 2.9 6.2"></a-entity>
-    
-    
-    <!--Boden-->
-    <a-plane position="0 1 5" rotation="-90 0 0" width="4" height="4" color="#cccccc" shadow="cast: false"></a-plane>
-    <!--Gemälde1-->
-    <a-plane position="1.99 1.8 3.8" rotation="0 -90 0" width="0.8" height="0.8" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FECONOMYcp.jpg?1548946411971" shadow="cast: false"></a-plane>
-    <!--Gemälde2-->
-    <a-plane position="1.99 1.8 5" rotation="0 -90 0" width="0.8" height="0.8" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FPLASTIC_EARTHcp.jpg?1548946322901" shadow="cast: false"></a-plane>
-    <!--Gemälde3-->
-    <a-plane position="1.99 1.8 6.2" rotation="0 -90 0" width="0.8" height="0.8" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FSPIRITUS_SANCTUScp.jpg?1548946314884" shadow="cast: false"></a-plane>
-    <!--Gemälde4-->
-    <a-plane position="-1.99 1.8 3.8" rotation="0 90 0" width="0.8" height="0.8" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FCITY_LEAVEcp.jpg?1548946427798" shadow="cast: false"></a-plane>
-    <!--Gemälde5-->
-    <a-plane position="-1.99 1.8 5" rotation="0 90 0" width="0.8" height="0.8" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FFOODcp.jpg?1548946397739" shadow="cast: false"></a-plane>
-    <!--Gemälde6-->
-    <a-plane position="-1.99 1.8 6.2" rotation="0 90 0" width="0.8" height="0.8" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FFORKcp.jpg?1548946383768" shadow="cast: false"></a-plane>
-    <!--Wand1-->
-    <a-plane position="-2 2 5" rotation="0 90 0" width="4" height="2" color="#cccccc" shadow="cast: false"></a-plane>
-    <!--Wand2-->
-    <a-plane position="2 2 5" rotation="0 270 0" width="4" height="2" color="#cccccc" shadow="cast: false"></a-plane>
-    <!--Decke-->
-    <a-plane position="0 3 5" rotation="90 90 0" width="4" height="4" color="#cccccc" shadow="cast: false"></a-plane>
-    
-    <!--LIGHT_1-->
-    <!--<a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="1 2.9 8.8"></a-entity>
-    <a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="1 2.9 10"></a-entity>
-    <a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="1 2.9 11.2"></a-entity>
-    <a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="1 2.9 12.2"></a-entity>
-    
-    <!--LIGHT_2-->
-    <!--<a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="-1 2.9 8.8"></a-entity>
-    <a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="-1 2.9 10"></a-entity>
-    <a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="-1 2.9 11.2"></a-entity>
-    <a-entity light="type:point;intensity:0.32;distance:16;decay:4" position="-1 2.9 12.2"></a-entity>
-    
-    
-    <!--Boden-->
-    <a-plane position="0 1 10" rotation="-90 0 0" width="4" height="4" color="#cccccc" shadow="cast: false"></a-plane>
-    <!--Gemälde1-->
-    <a-plane position="1.99 1.8 8.8" rotation="0 -90 0" width="0.8" height="1" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FBITE_BY_BITEcp.jpg?1548947670779" shadow="cast: false"></a-plane>
-    <!--Gemälde2-->
-    <a-plane position="1.99 1.8 10" rotation="0 -90 0" width="0.8" height="1" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FEGG_YOLKcp.jpg?1548946900472" shadow="cast: false"></a-plane>
-    <!--Gemälde3-->
-    <a-plane position="1.99 1.8 11.2" rotation="0 -90 0" width="0.8" height="1" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FPLAN_ET_Bcp.jpg?1548946621407" shadow="cast: false"></a-plane>
-    <!--Gemälde4-->
-    <a-plane position="-1.99 1.8 8.8" rotation="0 90 0" width="0.8" height="1" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FFISH_BULBcp.jpg?1548946889109" shadow="cast: false"></a-plane>
-    <!--Gemälde5-->
-    <a-plane position="-1.99 1.8 10" rotation="0 90 0" width="1.114" height="0.8" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FTRUE_BRILLIANTcp.jpg?1548947781273" shadow="cast: false"></a-plane>
-    <!--Gemälde6-->
-    <a-plane position="-1.99 1.8 11.2" rotation="0 90 0" width="0.8" height="1" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FTHINKcp.jpg?1548946590440" shadow="cast: false"></a-plane>
-    <!--Gemälde7-->
-    <a-plane position="0.84 1.8 12.99" rotation="0 180 0" width="1.2" height="1" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FDESTRUCTIVE_INTELLIGENCEcp.jpg?1548947739618" shadow="cast: false"></a-plane>
-    <!--Gemälde8-->
-    <a-plane position="-0.84 1.8 12.99" rotation="0 180 0" width="1.2" height="1" color="#fff" src="https://cdn.glitch.com/4577268d-0591-4066-996b-b608e691a594%2FMIDDLE_OF_THE_MIDDLE_FINGERcp.jpg?1548947722434" shadow="cast: false"></a-plane>
-    <!--Wand1-->
-    <a-plane position="-2 2 10" rotation="0 90 0" width="4" height="2" color="#cccccc" shadow="cast: false"></a-plane>
-    <!--Wand2-->
-    <a-plane position="2 2 10" rotation="0 270 0" width="4" height="2" color="#cccccc" shadow="cast: false"></a-plane>
-    <!--Wand3-->
-    <a-plane position="0 2 13" rotation="0 180 0" width="4" height="2" color="#cccccc" shadow="cast: false"></a-plane>
-    <!--Decke-->
-    <a-plane position="0 3 10.5" rotation="90 90 0" width="5" height="4" color="#cccccc" shadow="cast: false"></a-plane>
-
-
-
-  </a-scene>
-
-  <script src="https://github.com/aframevr/aframe/blob/master/examples/showcase/link-traversal/js/components/link-controls.js"></script>
-
-</section>
-
 
 
 <footer class="footer">
