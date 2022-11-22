@@ -1,0 +1,407 @@
+/* ******************* */
+/* General components */
+/* *********************** */
+
+/* 1344px */
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 48em = 768px
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+} */
+
+/* 1200px */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  /* .grid {
+    column-gap: 4.8;
+    row-gap: 6.4rem;
+  } */
+
+  /* .heading-secondary {
+    font-size: 3.6rem;
+  } */
+
+  .brand {
+    float: left;
+    padding: 2em;
+    align-items: center;
+    text-align: center;
+  }
+  .brand h1 {
+    margin: 0;
+    text-align: center;
+    color: #000000;
+    font-weight: 400;
+    font-size: 2.2rem;
+    margin-left: 0;
+  }
+
+  /* .heading-tertiary {
+    font-size: 2.4rem;
+  } */
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+
+  .container {
+    padding: 2px;
+  }
+}
+
+@media screen and (min-width: 48.25em) {
+  a.menu-link {
+    display: none;
+  }
+  .js nav[role="navigation"] {
+    max-height: none;
+  }
+  nav[role="navigation"] ul {
+    margin: 0 0 0 -0.25em;
+    border: 0;
+    float: right;
+  }
+  nav[role="navigation"] li {
+    display: inline-block;
+    margin: 0 0.25em;
+  }
+  nav[role="navigation"] li a {
+    border: 0;
+    font-size: 1.5rem;
+  }
+}
+
+/* 944px tablets */
+
+@media (max-width: 59em) {
+  html {
+    font-weight: 50%;
+  }
+
+  .container {
+    /* align-items: center;
+    justify-content: center;
+    padding: 1px 8%; */
+  }
+
+  nav[role="navigation"] li a {
+    border: 0;
+    font-size: 1.5rem;
+  }
+
+  .brand {
+    float: left;
+    padding: 2em;
+    align-items: center;
+    text-align: center;
+  }
+  .brand h1 {
+    margin: 0;
+    text-align: center;
+    color: #000000;
+    font-weight: 400;
+    font-size: 2.2rem;
+    margin-left: 0;
+  }
+
+  .heading-primary {
+    font-size: 4.2rem;
+    line-height: 1.05;
+    margin-bottom: 3rem;
+    text-align: left;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .hero-img1 {
+    width: 30%;
+    float: right;
+  }
+
+  /* .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  } */
+
+  /* .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  } */
+
+  /* .cta {
+   
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  } */
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+
+  /* Mobile navigation */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+}
+
+/* 704px  */
+
+@media (max-width: 44em) {
+  /* .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  } */
+
+  /* .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  } */
+
+  .hero-img1 {
+    width: 30%;
+    float: right;
+  }
+
+  .heading-primary {
+    font-size: 3.2rem;
+    line-height: 1.05;
+    margin-bottom: 3rem;
+    text-align: left;
+  }
+
+  nav[role="navigation"] ul {
+    margin: 0;
+    padding: 0;
+    padding: 0.7em 0;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  footer {
+    /* text-align: justify; */
+    padding: 2.8rem 2.8rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid {
+    display: grid;
+    column-gap: 2.4rem;
+    row-gap: 2.6rem;
+    /* margin-bottom: 9.6rem; */
+    padding-left: 4rem;
+  }
+
+  #parallax-world-of-ugg .parallax-one {
+    background-position: top right;
+  }
+
+  .brandfooter h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* 544px */
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 3.8rem;
+  }
+  .grid--footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #parallax-world-of-ugg .parallax-one {
+    background-position: center;
+  }
+
+  /* .gallery {
+    background-position: top right;
+  } */
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .section-hero {
+    background-color: #fdf2e9b2;
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  /* .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  } */
+
+  /* .step-img-box {
+    transform: translateY(2.4rem);
+  } */
+
+  /* .testimonials {
+    grid-template-columns: 1fr;
+  } */
+
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.6rem;
+  }
+  /* .cta {
+    grid-template-columns: 1fr;
+  } */
+  /* 
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  } */
+}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {
+    padding: 40px;
+    width: 620px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px;
+    width: 100%;
+  }
+  #parallax-world-of-ugg h2 {
+    font-size: 30px;
+  }
+  #parallax-world-of-ugg .block {
+    padding: 30px;
+  }
+  #parallax-world-of-ugg .parallax-one,
+  #parallax-world-of-ugg .parallax-two,
+  #parallax-world-of-ugg .parallax-three {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px 15px;
+    width: 100%;
+  }
+}
